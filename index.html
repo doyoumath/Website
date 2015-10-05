@@ -8,6 +8,15 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    jQuery(document).ready(function() {
+    jQuery('.tabs .tab-links a').on('click', function(e)  {
+        var currentAttrValue = jQuery(this).attr('href');
+        jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
+        jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+ 
+        e.preventDefault();
+    });
+});
   </head>
   <body>
     <section class="page-header">
@@ -17,6 +26,37 @@
       <a href="https://github.com/TheOfficialChurchOfLilD/Website/zipball/master" class="btn">Download .zip</a>
       <a href="https://github.com/TheOfficialChurchOfLilD/Website/tarball/master" class="btn">Download .tar.gz</a>
     </section>
+    
+    <div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#tab1">Tab #1</a></li>
+        <li><a href="#tab2">Tab #2</a></li>
+        <li><a href="#tab3">Tab #3</a></li>
+        <li><a href="#tab4">Tab #4</a></li>
+    </ul>
+ 
+    <div class="tab-content">
+        <div id="tab1" class="tab active">
+            <p>Tab #1 content goes here!</p>
+            <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis.</p>
+        </div>
+ 
+        <div id="tab2" class="tab">
+            <p>Tab #2 content goes here!</p>
+            <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis. In hac habitasse platea dictumst. Ut euismod tempus hendrerit. Morbi ut adipiscing nisi. Etiam rutrum sodales gravida! Aliquam tellus orci, iaculis vel.</p>
+        </div>
+ 
+        <div id="tab3" class="tab">
+            <p>Tab #3 content goes here!</p>
+            <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum ri.</p>
+        </div>
+ 
+        <div id="tab4" class="tab">
+            <p>Tab #4 content goes here!</p>
+            <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis. In hac habitasse platea dictumst. Ut euismod tempus hendrerit. Morbi ut adipiscing nisi. Etiam rutrum sodales gravida! Aliquam tellus orci, iaculis vel.</p>
+        </div>
+    </div>
+</div>
 
     <section class="main-content">
       <p>Update 1.0 - God wants to take bad some spelling errors..... for now</p>
