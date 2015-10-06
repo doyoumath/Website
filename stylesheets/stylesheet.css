@@ -300,3 +300,9 @@ a {
             border: 1px solid black;
             border-bottom: none;
         }
+        
+        p.para {
+            width: 85%;
+            font-style: italic;
+            background-color: #E0D1C2;
+        }
