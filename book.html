@@ -8,14 +8,16 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-    jQuery(document).ready(function() {
-    jQuery('.tabs .tab-links a').on('click', function(e)  {
-        var currentAttrValue = jQuery(this).attr('href');
-        jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
-        jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
-        e.preventDefault();
-    });
-});
+    <script>
+          jQuery('.tabs .tab-links a').on('click', function(e)  {
+              var currentAttrValue = jQuery(this).attr('href');
+              jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
+              jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+              e.preventDefault();
+          });
+      });
+    </script> jQuery(document).ready(function() {
+    
   </head>
   <body>
     <section class="page-header">
