@@ -297,4 +297,6 @@ a {
  
         .tab.active {
             display:block;
+            border: 1px solid black;
+            border-bottom: none;
         }
