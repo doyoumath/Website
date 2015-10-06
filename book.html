@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <script>
+          jQuery(document).ready(function() {
           jQuery('.tabs .tab-links a').on('click', function(e)  {
               var currentAttrValue = jQuery(this).attr('href');
               jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
@@ -16,7 +17,7 @@
               e.preventDefault();
           });
       });
-    </script> jQuery(document).ready(function() {
+    </script> 
     
   </head>
   <body>
