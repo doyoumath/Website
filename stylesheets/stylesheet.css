@@ -306,3 +306,8 @@ a {
             font-style: italic;
             background-color: #E0D1C2;
         }
+        
+        ul.tab-links {
+          border-bottom: 1px solid #00f800;
+          width: 100%;
+        }
